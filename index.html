@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Cuy University</title>
+</head>
+
+<body>
+  <div class="container">
+    
+    <!-- SIGN IN CONTAINER START -->
+    <div class="signin-container" id="signInContainer">
+      <h1 id="signInTitle">Sign In</h1>
+      <input type="text" placeholder="Username" id="signInUser">
+      <input type="password" placeholder="Password" id="signInPass">
+      <button onclick="signIn()" id="signInButton">Masuk</button>
+      <p id="signInError">Username atau password salah</p>
+      <p id="signInDaftarYuk">Belum punya akun? yuk <span onclick="daftar()">daftar</span></p>
+    </div>
+    <!-- SIGN IN CONTAINER END -->
+    
+    <!-- SIGN UP CONTAINER START -->
+    <div class="signup-container" id="signUpContainer">
+      <h1 id="signUpTitle">Sign Up</h1>
+      <input type="text" placeholder="Username" id="signUpUser" required>
+      <input type="password" placeholder="Password" id="signUpPass" required>
+      <button onclick="signUp()" id="signUpButton">Daftar</button>
+      <p id="signUpDone">Daftar berhasil😊 <span onclick="login()">masuk</span></p>
+      <p id="signUpFail">Daftar gagal😢</p>
+    </div>
+    <!-- SIGN IN CONTAINER END -->
+    
+    <!-- CONTENT SAAT BERHASIL MASUK START-->
+    <div id="content">
+      <h1 id="loginAdmin">Hi ADMIN👋</h1>
+      <h1 id="loginNew">Welcome NEW ACCOUNT✨</h1>
+      <h1 id="loginStaff">Hello STAFF✌️</h1>
+      <button onclick="logout()" id="logoutButton">Logout</button>
+    </div>
+    <!-- CONTENT SAAT BERHASIL MASUK END-->
+  </div>
+  
+  <script src="script/script.js"></script>
+</body>
+
+</html>
